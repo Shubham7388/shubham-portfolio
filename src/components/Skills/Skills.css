@@ -9,7 +9,8 @@
     text-align: center;
     margin: 0 auto;
     position: absolute;
-    left: 10rem;
+    position: relative;
+    z-index: 1;
 }
 .skillsTitle {
     font-size: 2rem;

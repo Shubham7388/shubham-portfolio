@@ -3,7 +3,7 @@ import './intro.css'
 import bg from '../../assets/image.png'
 import {Link} from 'react-scroll'
 import imgBtn from '../../assets/hireme.png'
-import proImg from '../../assets/shubhamnewpic.jpg'
+import proImg from '../../assets/dummypro.jpg'
 
 const Intro = () => {
   return (

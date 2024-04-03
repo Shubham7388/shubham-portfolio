@@ -7,7 +7,7 @@ import proImg from '../../assets/dummypro.jpg'
 
 const Intro = () => {
   return (
-        <sectio id="intro">
+        <section id="intro">
             <div className="introContent">
                 <span className="hello">Hello,</span>
                 <span className="introText">I'm <span className="introName">Shubham</span><br />Web Developer</span>
@@ -15,7 +15,7 @@ const Intro = () => {
                 <Link><button className="btn"><img src={imgBtn} alt="imgBtn" className='btnImg' />Hire me</button></Link>
             </div>
             <img src={proImg} alt="proImg" className='bg' />
-        </sectio>
+        </section>
     )
 }
 

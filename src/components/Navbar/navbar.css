@@ -48,6 +48,13 @@
     color: yellow;
 }
 
+.mobMenu {
+    display: none;
+    object-fit: cover;
+    height: 1.8rem;
+
+}
+
 .navMenu {
     position: absolute;
     top: 4rem;
@@ -67,5 +74,25 @@
     color: white;
     padding: 0.5rem 3rem;
     margin: 0.25rem;
+    background: rgb(30, 30, 30);
+
+}
+.MenuItemList:hover{
+    color: yellow;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid yellow;
+}
+
+@media screen and (max-width:720px) {
+    .mobMenu {
+        display: flex;
+    }
     
+    .desktopmenu {
+        display: none;
+    }
+
+    .desktopmenubtn {
+        display: none;
+    }
 }

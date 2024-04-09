@@ -18,12 +18,14 @@ const Contact = () => {
         e.preventDefault();
     
         emailjs
-          .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
-            publicKey: 'YOUR_PUBLIC_KEY',
+          .sendForm('service_7w6p6xt', 'template_el72jpk', form.current, {
+            publicKey: '1v-BBb5KPUERyMP9K',
           })
           .then(
             () => {
               console.log('SUCCESS!');
+              e.target.reset();
+              alert('email sent !');
             },
             (error) => {
               console.log('FAILED...', error.text);
@@ -51,9 +53,9 @@ const Contact = () => {
                 <span className="contactDesc">
                     Please fill out the form below to discuss any work opportunities.
                 </span>
-                <form className="contactForm" ref={form} onSubmit={sendEmail}>
-                    <input type="text" className="name" placeholder='Your Name' />
-                    <input type="email" className="email" placeholder='Your Email' />
+                <form className="contactForm" ref={form} onSubmit={sendEmail} >
+                    <input type="text" className="name" placeholder='Your Name' name='your_name' />
+                    <input type="email" className="email" placeholder='Your Email' name='your_email'/>
                     <textarea className="msg" name="message" rows="5" placeholder='Your Message'></textarea>
                     <button type='submit' value='send' className="submitBtn">Submit</button>
 
